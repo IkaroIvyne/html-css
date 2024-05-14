@@ -4,6 +4,7 @@
  Estou aprendendo a criar sites e agora vou gerencias meus repositórios!
 
  <a href="./exercicios/ex001/">Exercicio 01</a>
+ <br>
  <a href="./exercicios/ex002/">Exercicio 02</a>
  <a href="./exercicios/ex003/">Exercicio 03</a>
  <a href="./exercicios/ex004/">Exercicio 04</a>
