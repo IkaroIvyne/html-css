@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: azure;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        header > nav {
+            background-color: gray;
+            padding: 2px;
+            text-align: right;
+            box-shadow: 2px 2px 5px black;
+            border-radius: 4px; 
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: azure;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        main {
+            background-color: azure;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        article {
+            background-color: rgb(173, 173, 173);
+            border-radius: 10px;
+        }
+
+        
+
+        article > h2 {
+            text-align: center;
+        }
+        
+        article > p {
+            margin: 10px;
+        }
+
+        article > aside {
+            background-color: black;
+            color: azure;
+            border-radius: 0px 0px 10px 10px;
+            padding-left: 10px;
+        }
+
+        footer {
+            background-color: black;
+            color: azure;
+            text-align: center;
+            padding: 2px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+
+        <nav>
+            <a href="#">Bem Vindo(a)</a>
+            <a class="contexto" href="#">Contexto NRPG</a>
+            <a href="#">Kiba</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid fugiat facere nulla sint perspiciatis ex quasi at ipsa. Dicta repellat fugiat laudantium dignissimos, cupiditate pariatur impedit aut dolor nam aliquam.</p>
+                <aside>
+                    <p>Artigo escrito por Jóse da Silva.</p>
+                </aside>
+            </article>
+            <article></article>
+            <article></article>
+        </section>
+        
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoEmVideo</p>
+    </footer>
+</body>
+</html>
