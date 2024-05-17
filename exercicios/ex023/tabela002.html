@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        
+
+        thead, tr th, tbody, tr, td, tfoot, tr, th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        thead tr th {
+            top: -1px;
+            position: sticky;
+            background-color: gray;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+    
+        td.num {
+            text-align: right;
+            padding-right: 18px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: lightgray;
+            
+        }
+
+        tbody tr:nth-child(even) {
+            font-weight:bolder;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!--
+
+        Anatomia Para Tabelas Grandes
+
+            <TABLE>
+                CAPTION
+                    <THEAD>
+                        <Tr> (Linha) 
+                            <Td>(Dados)</Td>
+                            <Th>(Título)</Th>
+                        </Tr>
+                    <TBODY>
+                        <Tr> (Linha) 
+                            <Td>(Dados)</Td>
+                            <Th>(Título)</Th>
+                        </Tr>
+                    <TFOOT>
+                        <Tr> (Linha) 
+                            <Td>(Dados)</Td>
+                            <Th>(Título)</Th>
+                        </Tr>
+
+    -->
+
+    <table>
+
+        <h1>Uso de Tabelas Grandes</h1>
+
+        <caption>Populações das Unidades Federativas</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <!--Scope col, para títulos que representam COLUNAS!!-->
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr> <!--Linha-->
+                <td>São Paulo</td> <!--1°Elemento-->
+                <td class="num">44 411 238</td> <!--2°Elemento-->
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 538 718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 054 524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 141 626</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 444 380</td>
+            </tr>
+            <tr>
+                <td>Rio G.do Sul</td>
+                <td class="num">10 882 965</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 058 931</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 794 957	</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th> <!--Scope row, para títulos que representam LINHAS!!-->
+                <td>135 327 339</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+
+
+</body>
+</html>
