@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        table {
+            border: 1px solid black;
+            border-collapse:separate;
+            width: 1000px;
+            height: 1000px;
+        }
+
+        tr td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #imagemB {
+            background-image: url(https://giffiles.alphacoders.com/497/49729.gif);
+            background-size: cover;
+            background-repeat: no repeat;
+            background-position: center;
+        }
+
+        #number1 {
+            background-image: url(https://i.pinimg.com/originals/52/73/e3/5273e3c53c1ae4d93ec3c58ecb78a33a.gif);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        #testE {
+            background-image: url(https://64.media.tumblr.com/03d3a3b8d3f8ae1bef56a67866c0b9ec/9ed4eb8f429e263d-1d/s500x750/ec669c2ec24f737fc3d02ba6a0fd49aa88a3640a.gifv);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Mesclagem de Células</h1>
+
+    <table>
+
+        <tr>
+            <td>A</td>
+            <td id="imagemB" colspan="2"></td>
+
+        </tr>
+
+        <tr>
+            <td>D</td>
+            <td id="testE"></td>
+            <td rowspan="2">F</td>
+        </tr>
+
+        <tr>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+
+        <tr>
+            
+            <td id="number1"></td>
+            <td>L</td>
+        </tr>
+
+    </table>
+</body>
+</html>
